@@ -1,0 +1,263 @@
+// Big Tablets
+@media (max-width: 1100px) {
+	#header-home .header-content {
+		h1 {
+			font-size: 3rem;
+		}
+		
+		p {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+// Tablets
+@media (max-width: 800px) {
+	#header-home .header-content {
+		h1 {
+			font-size: 3rem;
+		}
+
+		p {
+			font-size: 1rem;
+		}
+	}
+
+	// Home: Tablet
+	#home {
+		&-a {
+			.section-title {
+				font-size: 1.7rem;
+			}
+		}
+
+		&-b {
+			.stats li.stats{
+				&-title {
+					font-size: 1.2rem;
+				}
+				&-number {
+					font-size: 1.5rem;
+				}
+			}
+		}
+
+		&-c {
+			.section-title {
+				font-size: 1.5rem;
+			}
+
+			p {
+				font-size: 1.2rem;
+			}
+
+			.process {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+	}
+
+	// About: Tablet
+	#about {
+		&-a {
+			.about-info {
+				display: grid;
+				grid-template-areas: 
+					'bio-image bio-image bio-image'
+					'bio bio bio'
+					'aw1 aw2 aw3';
+				gap: 1.2rem;
+			}
+		}
+
+		&-c {
+			padding: 1.5rem;
+
+			.about-logos {
+				grid-template-columns: repeat(2, 1fr);
+				gap: 1.5rem;
+			}
+		}
+
+		&-d {
+			.testimonials {
+				grid-template-columns: repeat(2, 1fr);
+
+				div {
+					border: 1px solid $medium-color;
+					border-radius: 5px;
+					padding: 0.5rem;
+					height: max-content;
+
+					p {
+						border: none;
+					}
+				}
+			}
+		}	
+	}
+
+	// Work
+	.items {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+// Smartphones
+@media (max-width: 500px) {
+	#main-nav {
+		flex-direction: column;
+		align-items: center;
+
+		ul li {
+			padding: 1rem 1rem;
+		}
+	}
+
+	// Header
+	#header {
+		&-home {
+			.header-content {
+				// padding-top: 10vh;
+
+				h1 {
+					font-size: 3rem;
+
+					br {
+						display: block;
+					}
+				}
+			}
+		}
+
+		&-inner {
+			background: $bg-image no-repeat 20% 30% /cover;
+			height: 8.5rem;
+			border-bottom: $main-color 3px solid;
+		}	
+	}
+
+	// Home
+	#home {
+		&-a {
+			.specials {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		&-b {
+			.stats {
+				grid-template-columns: repeat(2, 1fr);
+
+				div {
+					padding: 3rem 0;
+	
+					&:nth-child(1), &:nth-child(4) {
+						background: $light-color;
+					}
+	
+					&:nth-child(2), &:nth-child(3) {
+						background: $medium-color;
+					}
+				}
+			}
+		}
+
+		&-c {
+			.section-title {
+				font-size: 1.2rem;
+			}
+
+			p {
+				font-size: 1.2rem;
+			}
+
+			.process {
+				grid-template-columns: 1fr;
+			}
+		}	
+	}
+
+	// About
+	#about {
+		&-a {
+			.about-info {
+				grid-template-areas: 
+				'bio-image'
+				'bio'
+				'aw1'
+				'aw2'
+				'aw3';
+			}
+
+			.bio {
+				border-right: 3px solid $main-color;
+			}	
+		}
+
+		&-c {
+			.about-logos {
+				grid-template-columns: 1fr;
+				gap: 1.5rem;
+			}
+		}
+
+		&-d {
+			.testimonials {
+				grid-template-columns: 1fr;
+
+				div {
+					border: 1px solid $medium-color;
+					border-radius: 5px;
+					padding: 0.5rem;
+					height: max-content;
+
+					p {
+						border: none;
+					}
+				}
+			}
+		}
+	}
+
+	// Work
+	.items {
+		grid-template-columns: 1fr;
+	}
+
+
+	.footer-content {
+		flex-direction: column;
+
+		p {
+			padding-bottom: .5rem;
+		}
+	}
+
+	#contact {
+		&-a {
+			.text-fields {
+				grid-template-areas: 
+					'name'
+					'email'
+					'subject'
+					'phone'
+					'message';
+			}
+		}
+		&-b {
+			.contact-info {
+				grid-template-columns: 1fr;
+			}
+		}
+	
+		&-c {
+			padding: 1.5rem;
+
+			h1 {
+				text-align: center;
+				font-size: 2.2rem;
+			}
+		}	
+	}
+}
