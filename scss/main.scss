@@ -384,9 +384,10 @@ img {
 			justify-content: space-between;
 			min-width: 200px;
 
-			.fab {
+			a .fab {
 				// margin-right: 1rem;
 				border: set-text-color($dark-color) solid 2px;
+				color: set-text-color($dark-color);
 				height: 20px;
 				width: 20px;
 				line-height: 20px;
